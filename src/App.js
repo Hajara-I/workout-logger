@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <p>Gym workout logger</p>
       <p>Track workouts easily</p>
       <WorkoutForm onAddWorkout={addWorkout}></WorkoutForm>

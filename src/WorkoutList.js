@@ -1,7 +1,9 @@
+import './index.css';
+
 function WorkoutList({ workouts }) {
   // Receive workouts as a prop
   return (
-    <div>
+    <div className="workout-list">
       <h2>Workout Log</h2>
       <ul>
         {workouts.map((workout, index) => (

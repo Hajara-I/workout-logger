@@ -11,3 +11,81 @@ code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.app-container {
+  width: 80%; /* Adjust as needed */
+  max-width: 600px; /* Adjust as needed */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.app-container p { /* Style the <p> elements */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.workout-list ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.workout-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Add separators between items */
+}
+
+.workout-form label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Add margin below labels */
+}
+
+.workout-form input,
+.workout-form button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Add margin below inputs and button */
+}
+
+/* Styles for larger screens (desktop) */
+.app-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 480px) { /* Adjust breakpoint as needed */
+  .app-container {
+    width: 95%; /* Make the container almost full-width */
+    max-width: none; /* Remove max-width */
+    margin: 10px auto; /* Reduce margin */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .workout-form {
+    padding: 10px; /* Reduce form padding */
+  }
+
+  /* You might want to adjust font sizes, input sizes, etc. here */
+  .workout-form label {
+    font-size: 1rem; /* Adjust font size */
+  }
+  .workout-form input,
+  .workout-form button {
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+.workout-form button {
+  padding: 12px 20px; /* Larger padding */
+  font-size: 1.1rem; /* Larger font size */
+}

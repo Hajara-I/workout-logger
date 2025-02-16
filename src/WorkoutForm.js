@@ -22,7 +22,7 @@ function WorkoutForm({ onAddWorkout }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="workout-form">
       <label htmlFor="exercise">Exercise:</label>
       <input
         type="text"
