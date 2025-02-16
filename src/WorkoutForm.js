@@ -7,6 +7,9 @@ function WorkoutForm({ onAddWorkout }) {
     reps: "",
     weight: "",
     date: "",
+    time: "",
+    speed: "",
+    incline: "",
   });
 
   const handleChange = (e) => {
@@ -18,7 +21,16 @@ function WorkoutForm({ onAddWorkout }) {
 
     onAddWorkout(formData);
 
-    setFormData({ exercise: "", sets: "", reps: "", weight: "", date: "" });
+    setFormData({
+      exercise: "",
+      sets: "",
+      reps: "",
+      weight: "",
+      date: "",
+      time: "",
+      speed: "",
+      incline: "",
+    });
   };
 
   return (
@@ -59,6 +71,36 @@ function WorkoutForm({ onAddWorkout }) {
         id="weight"
         name="weight"
         value={formData.weight}
+        onChange={handleChange}
+      />
+      <br />
+
+      <label htmlFor="time">Time:</label>
+      <input
+        type="text"
+        id="time"
+        name="time"
+        value={formData.time}
+        onChange={handleChange}
+      />
+      <br />
+
+      <label htmlFor="speed">Speed:</label>
+      <input
+        type="text"
+        id="speed"
+        name="speed"
+        value={formData.speed}
+        onChange={handleChange}
+      />
+      <br />
+
+      <label htmlFor="incline">Incline:</label>
+      <input
+        type="text"
+        id="incline"
+        name="incline"
+        value={formData.incline}
         onChange={handleChange}
       />
       <br />

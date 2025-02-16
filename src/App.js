@@ -19,12 +19,18 @@ function App() {
     setWorkouts([...workouts, newWorkout]);
   };
 
+  const clearWorkouts = () => {
+    localStorage.removeItem("workouts"); // Remove workouts from local storage
+    setWorkouts([]); // Update state to trigger re-render and clear the list
+  };
+
   return (
     <div className="app-container">
       <p>Gym workout logger</p>
       <p>Track workouts easily</p>
       <WorkoutForm onAddWorkout={addWorkout}></WorkoutForm>
       <WorkoutList workouts={workouts}></WorkoutList>
+      <button className="clear-data-button" onClick={clearWorkouts}>Clear Workout Data</button> {}
     </div>
   );
 }
